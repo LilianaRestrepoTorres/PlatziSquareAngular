@@ -1,3 +1,20 @@
 <h1>
   {{title}}
 </h1>
+<h2>
+  <!-- String Interpolation = Comunicación  TypeScrip -> HTML {{}}-->
+  {{a+b}}
+</h2>
+<div>
+  <!-- Property Binding= Comunicación  HTML -> TypeScrip [] -->
+  <button [disabled]="!listo" type="button" name="button">Click me!</button>
+
+  <!-- Event Binding= Comunicación  HTML -> TypeScrip con evento-acción () -->
+  <button (click)="hacerAlgo()" >Click me!</button>
+</div>
+<div>
+  <!-- Two Way Data Binding= Comunicación  HTML <-> TypeScrip [()]-->
+  <input type="text" placeholder="Tu nombre" [(ngModel)]="nombre">
+  <br>
+  Mi nombre es {{nombre}}
+</div>

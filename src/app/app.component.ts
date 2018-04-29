@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'PlatziSquare!';
+  otro = 'String Interpolation';
+  a = 3;
+  b = 5;
+  listo = false;
+  nombre:string = '';
+
+  constructor(){
+    setTimeout(() => {
+      this.listo = true;
+    }, 3000)
+
+    //Property Binding= Comunicación  HTML -> TypeScrip []
+    //setTimeout(() => {Código}, 3000)
+  }
+
+  //Se utiliza en el event Binding
+  hacerAlgo(){
+    alert('Haciendo algo');
+  }
 }
