@@ -13,9 +13,10 @@ export class AppComponent {
   listo = false;
   nombre:string = '';
   lugares:any = [
-    {nombre: 'Floreria la Gardenia'},
-    {nombre: 'Donas la pasadita'},
-    {nombre: 'Veterinaria Huellitas Felices'},
+    {active: true, nombre: 'Floreria la Gardenia'},
+    {active: true, nombre: 'Donas la pasadita'},
+    {active: true, nombre: 'Veterinaria Huellitas Felices'},
+    {active: false, nombre: 'Sushi'},
   ];
 
   constructor(){
