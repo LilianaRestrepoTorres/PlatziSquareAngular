@@ -12,6 +12,11 @@ export class AppComponent {
   b = 5;
   listo = false;
   nombre:string = '';
+  lugares:any = [
+    {nombre: 'Floreria la Gardenia'},
+    {nombre: 'Donas la pasadita'},
+    {nombre: 'Veterinaria Huellitas Felices'},
+  ];
 
   constructor(){
     setTimeout(() => {
